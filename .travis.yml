@@ -23,8 +23,8 @@ cache:
     - $HOME/.m2
 
 jdk:
-  - openjdk7
-  - openjdk8
+  - openjdk14
+  - openjdk15
 
 after_success:
   - mvn -V --no-transfer-progress clean cobertura:cobertura coveralls:report
